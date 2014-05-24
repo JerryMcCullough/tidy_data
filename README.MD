@@ -28,10 +28,10 @@ Only the mean and standard deviation variation were selected from the raw data f
 R must be installed on the computer that will run the run_analysis() script.
 
 *Step 1	   Download and unzip
-		[Download the ](https://www.google.com)
+		..* [Download the ](https://www.google.com)
 *Step 2    Set the working directory to the directory that contains the "   " directory.
 *Step 3    Load the R script run_analysis.R
-		From the R prompt>  source("run_analysis.R")
+		..* From the R prompt>  source("run_analysis.R")
 
 *Step 4    Run the script
-		From the R prompt> run_analysis()
+		..* From the R prompt> run_analysis()
