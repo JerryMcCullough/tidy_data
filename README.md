@@ -56,35 +56,54 @@ The raw data set contains 561 variables.  We are only using the mean and standar
 
 3 tBodyAcc-mean()-Z         - BodyAccelerationDirectionZTimeMean
 
-4 tBodyAcc-std()-X -          BodyAccelerationDirectionXTimeSdev
+4 tBodyAcc-std()-X          - BodyAccelerationDirectionXTimeSdev
 
-5 tBodyAcc-std()-Y
+5 tBodyAcc-std()-Y          - BodyAccelerationDirectionYTimeSdev
 
-6 tBodyAcc-std()-Z
+6 tBodyAcc-std()-Z          - BodyAccelerationDirectionZTimeSdev
 
-41 tGravityAcc-mean()-X
+41 tGravityAcc-mean()-X     - GravityAccelerationDirectionXTimeMean
 
-42 tGravityAcc-mean()-Y
+42 tGravityAcc-mean()-Y     - GravityAccelerationDirectionYTimeMean
 
-43 tGravityAcc-mean()-Z
-44 tGravityAcc-std()-X
-45 tGravityAcc-std()-Y
-46 tGravityAcc-std()-Z
-81 tBodyAccJerk-mean()-X
-82 tBodyAccJerk-mean()-Y
-83 tBodyAccJerk-mean()-Z
-84 tBodyAccJerk-std()-X
-85 tBodyAccJerk-std()-Y
-86 tBodyAccJerk-std()-Z
-121 tBodyGyro-mean()-X
-122 tBodyGyro-mean()-Y
-123 tBodyGyro-mean()-Z
-124 tBodyGyro-std()-X
-125 tBodyGyro-std()-Y
-126 tBodyGyro-std()-Z
-161 tBodyGyroJerk-mean()-X
-162 tBodyGyroJerk-mean()-Y
-163 tBodyGyroJerk-mean()-Z
+43 tGravityAcc-mean()-Z     - GravityAccelerationDirectionZTimeMean
+
+44 tGravityAcc-std()-X      - GravityAccelerationDirectionXTimeSdev
+
+45 tGravityAcc-std()-Y      - GravityAccelerationDirectionYTimeSdev
+
+46 tGravityAcc-std()-Z      - GravityAccelerationDirectionZTimeSdev
+
+81 tBodyAccJerk-mean()-X    - BodyAccelerationJerkDirectionXTimeMean
+
+82 tBodyAccJerk-mean()-Y    - BodyAccelerationJerkDirectionYTimeMean
+
+83 tBodyAccJerk-mean()-Z    - BodyAccelerationJerkDirectionZTimeMean
+
+84 tBodyAccJerk-std()-X     - BodyAccelerationJerkDirectionXTimeSdev
+
+85 tBodyAccJerk-std()-Y     - BodyAccelerationJerkDirectionYTimeSdev
+
+86 tBodyAccJerk-std()-Z     - BodyAccelerationJerkDirectionZTimeSdev
+
+121 tBodyGyro-mean()-X      - BodyGyroDirectionXTimeMean
+
+122 tBodyGyro-mean()-Y      - BodyGyroDirectionYTimeMean
+
+123 tBodyGyro-mean()-Z      - BodyGyroDirectionZTimeMean
+
+124 tBodyGyro-std()-X       - BodyGyroDirectionXTimeSdev
+
+125 tBodyGyro-std()-Y       - BodyGyroDirectionYTimeSdev
+
+126 tBodyGyro-std()-Z       - BodyGyroDirectionZTimeSdev
+
+161 tBodyGyroJerk-mean()-X  - BodyGyroJerkDirectionXTimeMean
+
+162 tBodyGyroJerk-mean()-Y  - BodyGyroJerkDirectionYTimeMean
+
+163 tBodyGyroJerk-mean()-Z  - BodyGyroJerkDirectionZTimeMean
+
 164 tBodyGyroJerk-std()-X
 165 tBodyGyroJerk-std()-Y
 166 tBodyGyroJerk-std()-Z
