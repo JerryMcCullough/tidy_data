@@ -49,12 +49,13 @@ There are 561 variables in the original study. we are only interested in the mea
 The raw data set contains 561 variables.  We are only using the mean and standard deviation in our study.  The following is a list of the variables that are extracted from the original data.  We also rename the variables to more meaningful names.  The variable list contains the original name (preceded by feature number) and the new name that is assigned to the variable.
 
  
+feature number | Original Variable Name | New Variable Name 
+--- | --- | ---
+1| tBodyAcc-mean()-X |        - BodyAccelerationDirectionXTimeMean
 
-1 tBodyAcc-mean()-X         - BodyAccelerationDirectionXTimeMean
+2| tBodyAcc-mean()-Y |        - BodyAccelerationDirectionYTimeMean
 
-2 tBodyAcc-mean()-Y         - BodyAccelerationDirectionYTimeMean
-
-3 tBodyAcc-mean()-Z         - BodyAccelerationDirectionZTimeMean
+3| tBodyAcc-mean()-Z |       - BodyAccelerationDirectionZTimeMean
 
 4 tBodyAcc-std()-X          - BodyAccelerationDirectionXTimeSdev
 
