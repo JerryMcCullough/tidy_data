@@ -1,4 +1,4 @@
-#Tidy Data Study 
+# Tidy Data Study 
 
 ## Alt-H2 Study Design
 The raw data input to this study are test and train data files in the 
