@@ -13,8 +13,8 @@ Only the mean and standard deviation variation were selected from the raw data f
 
 
 ##Dataset
-        The dataset includes the following files
-                Readme.txt -  Description of this study
+        Thi study dataset includes the following files
+                README.md     -  Description of this study
                 run_analysis.R - R script to extract selected data
 
 
@@ -31,8 +31,8 @@ Only the mean and standard deviation variation were selected from the raw data f
 
 ##Instructions
 
-R must be installed on the computer that will run the run_analysis() script.
-
+ R must be installed on the computer that will run the run_analysis() script. 
+ R version 3.0.3 (Warm Puppy) was used for this study.
 
 * Step 1.    Download and unzip
   * Download the original study data [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
