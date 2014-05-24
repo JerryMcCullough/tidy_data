@@ -1,11 +1,17 @@
 #Tidy Data Study
 
 ##Study Design
-The raw data input to this study are test and train data files used in the "Human Activity Recognition Using Smartphones Dataset" (See Acknowledgement Section) 
+The raw data input to this study are test and train data files used in the "Human Activity Recognition Using Smartphones Dataset" (See Acknowledgement Section).
 
 Only the mean and standard deviation variables were selected from the original raw data for the "Tidy Data" study.
 
+The activities file and activitites labels are also used to assign meaningful activities labels to the data.
 
+The subjects files are also used to assign subjects to the observations.  There were 30 subjects that participated in the study.  They are numbered 1-30.
+
+The "test" and "train" sunject data is merged together since we are intersted in the complete data for the Tidy Data Study.
+
+There are 561 variables in the original study. we are only interested in the mean and standard deviation variable for our study. (See variables section)   
 
 ##Dataset
         This study dataset includes the following files
@@ -15,6 +21,13 @@ Only the mean and standard deviation variables were selected from the original r
 
 
 ##Input Files
+ train data       "UCI HAR Dataset/train/X_train.txt"
+ test data        "UCI HAR Dataset/test/X_test.txt"
+ train activities "UCI HAR Dataset/train/y_train.txt"  
+ test activities  "UCI HAR Dataset/test/y_test.txt"
+ test subjects    "UCI HAR Dataset/test/subject_test.txt"
+ train subjects   "UCI HAR Dataset/train/subject_train.txt
+ activity labels  "UCI HAR Dataset/activity_labels.txt"
 
 ##Output Files
 
@@ -26,7 +39,9 @@ Only the mean and standard deviation variables were selected from the original r
 
 
 ##Variables
+The raw data set contains 561 variable.  We are only using the mean and standard deviation in our study.  The following is a list of the variables tah are extracted from the original data.  We also rename the variables to more meaning ful names.  The variable list contains the original name (with feature number) and the name we assigned to the variable.
 
+ 
 
 ##Instructions
 
@@ -59,7 +74,7 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-For more information about the original study:
+For more information about the "Human Activity Recognition Using Smartphones" study:
 
 [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
