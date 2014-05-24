@@ -1,9 +1,3 @@
-tidy_data
-=========
-
-Tidy Data Project Repo for Getting and Cleaning Data Course
-
-
 #Tidy Data Study
 
 ##Study Design
