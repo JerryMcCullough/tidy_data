@@ -34,11 +34,10 @@ Only the mean and standard deviation variation were selected from the raw data f
 R must be installed on the computer that will run the run_analysis() script.
 
 
-*Step 1.    Download and unzip
+* Step 1.    Download and unzip
   * Download the original study data [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-*Step 2    Set the working directory to the directory that contains the "   " directory.
-*Step 3    Load the R script run_analysis.R
+* Step 2    Set the working directory to the directory that contains the "   " directory.
+* Step 3    Load the R script run_analysis.R
   * From the R prompt>  source("run_analysis.R")
-
 *Step 4    Run the script
   * From the R prompt> run_analysis()
