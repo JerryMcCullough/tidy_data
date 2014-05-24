@@ -21,19 +21,24 @@ There are 561 variables in the original study. we are only interested in the mea
 
 
 ##Input Files
- train data|		"UCI HAR Dataset/train/X_train.txt"
+ The following file are used ny run_analysis() as input.
+ 
+File | File Path | File Description
+--- | --- | ---
 
- test data|		"UCI HAR Dataset/test/X_test.txt"
+ train data|"UCI HAR Dataset/train/X_train.txt" | Contains 561 variables per row  for the TRAIN subjects
 
- train activities|	"UCI HAR Dataset/train/y_train.txt"
+ test data|"UCI HAR Dataset/test/X_test.txt" | Contains 561 variables for per row the TEST subjects
 
- test activities:	"UCI HAR Dataset/test/y_test.txt"
+ train activities|"UCI HAR Dataset/train/y_train.txt"| Contains an activity code for each row in the train data file 
 
- test subjects:		"UCI HAR Dataset/test/subject_test.txt"
+ test activities|"UCI HAR Dataset/test/y_test.txt" |Contains an activity code for each row in the test data file
 
- train subjects:	"UCI HAR Dataset/train/subject_train.txt
+train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject number (1:30) fro each row in the train data file
 
- activity labels:	"UCI HAR Dataset/activity_labels.txt"
+ test subjects|"UCI HAR Dataset/test/subject_test.txt" | Contains a subject number (1:30) fro each row in the test data file
+
+ activity labels|"UCI HAR Dataset/activity_labels.txt" | Contains the descriptive labels for the activity codes
 
 
 ##Output Files
@@ -45,65 +50,65 @@ There are 561 variables in the original study. we are only interested in the mea
 
 
 
-##Variables
+###Variables
 The raw data set contains 561 variables.  We are only using the mean and standard deviation in our study.  The following is a list of the variables that are extracted from the original data.  We also rename the variables to more meaningful names.  The variable list contains the original name (preceded by feature number) and the new name that is assigned to the variable.
 
  
-feature number | Original Variable Name | New Variable Name 
+Feature Number | Original Variable Name | New Variable Name 
 --- | --- | ---
-1| tBodyAcc-mean()-X |        - BodyAccelerationDirectionXTimeMean
+1| tBodyAcc-mean()-X |         BodyAccelerationDirectionXTimeMean
 
-2| tBodyAcc-mean()-Y |        - BodyAccelerationDirectionYTimeMean
+2| tBodyAcc-mean()-Y |         BodyAccelerationDirectionYTimeMean
 
-3| tBodyAcc-mean()-Z |       - BodyAccelerationDirectionZTimeMean
+3| tBodyAcc-mean()-Z |        BodyAccelerationDirectionZTimeMean
 
-4 tBodyAcc-std()-X          - BodyAccelerationDirectionXTimeSdev
+4 tBodyAcc-std()-X           BodyAccelerationDirectionXTimeSdev
 
-5 tBodyAcc-std()-Y          - BodyAccelerationDirectionYTimeSdev
+5 tBodyAcc-std()-Y           BodyAccelerationDirectionYTimeSdev
 
-6 tBodyAcc-std()-Z          - BodyAccelerationDirectionZTimeSdev
+6 tBodyAcc-std()-Z           BodyAccelerationDirectionZTimeSdev
 
-41 tGravityAcc-mean()-X     - GravityAccelerationDirectionXTimeMean
+41 tGravityAcc-mean()-X      GravityAccelerationDirectionXTimeMean
 
-42 tGravityAcc-mean()-Y     - GravityAccelerationDirectionYTimeMean
+42 tGravityAcc-mean()-Y      GravityAccelerationDirectionYTimeMean
 
-43 tGravityAcc-mean()-Z     - GravityAccelerationDirectionZTimeMean
+43 tGravityAcc-mean()-Z      GravityAccelerationDirectionZTimeMean
 
-44 tGravityAcc-std()-X      - GravityAccelerationDirectionXTimeSdev
+44 tGravityAcc-std()-X       GravityAccelerationDirectionXTimeSdev
 
-45 tGravityAcc-std()-Y      - GravityAccelerationDirectionYTimeSdev
+45 tGravityAcc-std()-Y       GravityAccelerationDirectionYTimeSdev
 
-46 tGravityAcc-std()-Z      - GravityAccelerationDirectionZTimeSdev
+46 tGravityAcc-std()-Z       GravityAccelerationDirectionZTimeSdev
 
-81 tBodyAccJerk-mean()-X    - BodyAccelerationJerkDirectionXTimeMean
+81 tBodyAccJerk-mean()-X     BodyAccelerationJerkDirectionXTimeMean
 
-82 tBodyAccJerk-mean()-Y    - BodyAccelerationJerkDirectionYTimeMean
+82 tBodyAccJerk-mean()-Y     BodyAccelerationJerkDirectionYTimeMean
 
-83 tBodyAccJerk-mean()-Z    - BodyAccelerationJerkDirectionZTimeMean
+83 tBodyAccJerk-mean()-Z     BodyAccelerationJerkDirectionZTimeMean
 
-84 tBodyAccJerk-std()-X     - BodyAccelerationJerkDirectionXTimeSdev
+84 tBodyAccJerk-std()-X      BodyAccelerationJerkDirectionXTimeSdev
 
-85 tBodyAccJerk-std()-Y     - BodyAccelerationJerkDirectionYTimeSdev
+85 tBodyAccJerk-std()-Y      BodyAccelerationJerkDirectionYTimeSdev
 
-86 tBodyAccJerk-std()-Z     - BodyAccelerationJerkDirectionZTimeSdev
+86 tBodyAccJerk-std()-Z      BodyAccelerationJerkDirectionZTimeSdev
 
-121 tBodyGyro-mean()-X      - BodyGyroDirectionXTimeMean
+121 tBodyGyro-mean()-X       BodyGyroDirectionXTimeMean
 
-122 tBodyGyro-mean()-Y      - BodyGyroDirectionYTimeMean
+122 tBodyGyro-mean()-Y       BodyGyroDirectionYTimeMean
 
-123 tBodyGyro-mean()-Z      - BodyGyroDirectionZTimeMean
+123 tBodyGyro-mean()-Z       BodyGyroDirectionZTimeMean
 
-124 tBodyGyro-std()-X       - BodyGyroDirectionXTimeSdev
+124 tBodyGyro-std()-X        BodyGyroDirectionXTimeSdev
 
-125 tBodyGyro-std()-Y       - BodyGyroDirectionYTimeSdev
+125 tBodyGyro-std()-Y        BodyGyroDirectionYTimeSdev
 
-126 tBodyGyro-std()-Z       - BodyGyroDirectionZTimeSdev
+126 tBodyGyro-std()-Z        BodyGyroDirectionZTimeSdev
 
-161 tBodyGyroJerk-mean()-X  - BodyGyroJerkDirectionXTimeMean
+161 tBodyGyroJerk-mean()-X   BodyGyroJerkDirectionXTimeMean
 
-162 tBodyGyroJerk-mean()-Y  - BodyGyroJerkDirectionYTimeMean
+162 tBodyGyroJerk-mean()-Y   BodyGyroJerkDirectionYTimeMean
 
-163 tBodyGyroJerk-mean()-Z  - BodyGyroJerkDirectionZTimeMean
+163 tBodyGyroJerk-mean()-Z   BodyGyroJerkDirectionZTimeMean
 
 164 tBodyGyroJerk-std()-X
 165 tBodyGyroJerk-std()-Y
