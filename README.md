@@ -21,15 +21,19 @@ There are 561 variables in the original study. we are only interested in the mea
 
 
 ##Input Files
- train data		"UCI HAR Dataset/train/X_train.txt"
- test data		"UCI HAR Dataset/test/X_test.txt"
- train activities	"UCI HAR Dataset/train/y_train.txt"
- test activities	"UCI HAR Dataset/test/y_test.txt"
- test subjects		"UCI HAR Dataset/test/subject_test.txt"
+ train data:		"UCI HAR Dataset/train/X_train.txt"
 
- train subjects		"UCI HAR Dataset/train/subject_train.txt
+ test data:		"UCI HAR Dataset/test/X_test.txt"
 
- activity labels	"UCI HAR Dataset/activity_labels.txt"
+ train activities:	"UCI HAR Dataset/train/y_train.txt"
+
+ test activities:	"UCI HAR Dataset/test/y_test.txt"
+
+ test subjects:		"UCI HAR Dataset/test/subject_test.txt"
+
+ train subjects:	"UCI HAR Dataset/train/subject_train.txt
+
+ activity labels:	"UCI HAR Dataset/activity_labels.txt"
 
 
 ##Output Files
