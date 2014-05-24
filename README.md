@@ -22,8 +22,13 @@ There are 561 variables in the original study. we are only interested in the mea
 
 ##Input Files
  train data       "UCI HAR Dataset/train/X_train.txt"
+
  test data        "UCI HAR Dataset/test/X_test.txt"
- train activities "UCI HAR Dataset/train/y_train.txt"  
+
+
+ train activities "UCI HAR Dataset/train/y_train.txt"
+  
+
  test activities  "UCI HAR Dataset/test/y_test.txt"
  test subjects    "UCI HAR Dataset/test/subject_test.txt"
  train subjects   "UCI HAR Dataset/train/subject_train.txt
@@ -45,7 +50,7 @@ The raw data set contains 561 variable.  We are only using the mean and standard
 
 ##Instructions
 
- R must be installed on the computer that will run the run_analysis() script. 
+ R must be installed on the computer that will execute the run_analysis() script. 
  R version 3.0.3 (Warm Puppy) was used for this study.
 
 * Step 1.    Download and unzip
