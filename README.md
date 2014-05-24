@@ -25,11 +25,8 @@ There are 561 variables in the original study. we are only interested in the mea
  
 File | File Path | File Description
 --- | --- | ---
-
- train data|"UCI HAR Dataset/train/X_train.txt" | Contains 561 variables per row  for the TRAIN subjects
-
+train data|"UCI HAR Dataset/train/X_train.txt" | Contains 561 variables per row  for the TRAIN subjects
  test data|"UCI HAR Dataset/test/X_test.txt" | Contains 561 variables for per row the TEST subjects
-
  train activities|"UCI HAR Dataset/train/y_train.txt"| Contains an activity code for each row in the train data file 
 
  test activities|"UCI HAR Dataset/test/y_test.txt" |Contains an activity code for each row in the test data file
@@ -57,11 +54,8 @@ The raw data set contains 561 variables.  We are only using the mean and standar
 Feature Number | Original Variable Name | New Variable Name 
 --- | --- | ---
 1| tBodyAcc-mean()-X |         BodyAccelerationDirectionXTimeMean
-
 2| tBodyAcc-mean()-Y |         BodyAccelerationDirectionYTimeMean
-
 3| tBodyAcc-mean()-Z |        BodyAccelerationDirectionZTimeMean
-
 4 tBodyAcc-std()-X           BodyAccelerationDirectionXTimeSdev
 
 5 tBodyAcc-std()-Y           BodyAccelerationDirectionYTimeSdev
