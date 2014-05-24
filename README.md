@@ -56,7 +56,7 @@ The raw data set contains 561 variables.  We are only using the mean and standar
 
 3 tBodyAcc-mean()-Z         - BodyAccelerationDirectionZTimeMean
 
-4 tBodyAcc-std()-X - BodyAccelerationDirectionXTimeSTD
+4 tBodyAcc-std()-X -          BodyAccelerationDirectionXTimeSdev
 
 5 tBodyAcc-std()-Y
 
