@@ -25,9 +25,9 @@ The "test" and "train" subject data is merged together since we are intersted in
 
 There are 561 variables in the original study. we are only interested in the mean and standard deviation variable for our study. (See variables section). We use 73 variables.  The variables were selected if they are "mean" or "std" variable sin the original data. 
 
-Two output files are created by the run_analysi.R script.  The subject, activity, and the 73 mean and standard deviation variables are written to "HumanActivyRecognitionDetail.csv".
+Two output files are created by the run_analysi.R script.  The subject, activity, and the 73 mean and standard deviation variables are written to "HumanActivyRecognitionDetail.txt".
 
-"HumanActivityRecognitionSummaryBySubjectAndActivity.csv" is also created and contains the average of the 73 variables for each subject/activity combination.    
+"HumanActivityRecognitionSummaryBySubjectAndActivity.txt" is also created and contains the average of the 73 variables for each subject/activity combination.    
 
 
 ##2. Dataset
@@ -65,10 +65,14 @@ train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject numb
 
 File Name|File Description 
 --- | ---
-HumanActivyRecognitionDetail.txt| Mean and Standard Deviation Values. One row for each observation
-HumanActivityRecognitionSummaryBySubjectAndActivity.txt| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity 
+HumanActivyRecognitionDetail.txt| Original Mean and Standard Deviation Values. One row for each observation. 
+HumanActivityRecognitionSummaryBySubjectAndActivity.txt| The average of each variable in the HumanActivityRecognitionDetail.txt file by subject and activity 
 
+The columns are separated by commas.
 
+The column names are transformed - See "Variables" in the "Codebook" Section.
+
+The activities codes are converted to the activities labels.
 
 ##5. Code Book
         
@@ -170,6 +174,16 @@ The remaining 73 columns are the variables above.
 THe detail file has one row per observation
 
 The summary file has the mean for each variable by Subject and Activity.
+
+Activities labels are output using the activities codes as follows:
+
+* 1-WALKING
+* 2-WALKING_UPSTAIRS
+* 3-WALKING_DOWNSTAIRS
+* 4-SITTING
+* 5-STANDING
+* 6-LAYING
+
 
 
 ##6. run_analysis() Script
