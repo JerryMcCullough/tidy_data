@@ -1,6 +1,17 @@
 #Tidy Data Study
 
-##Study Design
+## Contents
+1. Study Design
+2. Dataset
+3. Input Files
+4. Output Files
+5. Code Book
+6. Instructions
+7. Acknowledgement
+
+
+
+##1. Study Design
 The raw data input to this study are test and train data files used in the "Human Activity Recognition Using Smartphones Dataset" (See Acknowledgement Section).
 
 Only the mean and standard deviation variables were selected from the original raw data for the "Tidy Data" study.
@@ -13,14 +24,14 @@ The "test" and "train" sunject data is merged together since we are intersted in
 
 There are 561 variables in the original study. we are only interested in the mean and standard deviation variable for our study. (See variables section)   
 
-##Dataset
+##2. Dataset
         This study dataset includes the following files
                 README.md      -  Description of this study
                 run_analysis.R -  R script to extract selected data
 
 
 
-##Input Files
+##3. Input Files
  The following file are used ny run_analysis() as input.
  
 File | File Path | File Description
@@ -34,9 +45,9 @@ train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject numb
  activity labels|"UCI HAR Dataset/activity_labels.txt" | Contains the descriptive labels for the activity codes
 
 
-##Output Files
+##4. Output Files
 
-##Code Book
+##5. Code Book
         run_analysis() creates two files:
 
 
@@ -150,7 +161,7 @@ Feature Number | Original Variable Name | New Variable Name
 
 
 
-##Instructions
+##6. Instructions
 
  R must be installed on the computer that will execute the run_analysis() script. 
  R version 3.0.3 (Warm Puppy) was used for this study.
@@ -167,7 +178,7 @@ Feature Number | Original Variable Name | New Variable Name
   * From the R prompt> `run_analysis()`
 
 
-##Acknowledgement
+##7. Acknowledgement
 
 Use of the "Tidy Data" study does not require a license or acknowledgement.
 
