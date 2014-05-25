@@ -20,9 +20,14 @@ The activities file and activitites labels are also used to assign meaningful ac
 
 The subjects files are also used to assign subjects to the observations.  There were 30 subjects that participated in the study.  They are numbered 1-30.
 
-The "test" and "train" sunject data is merged together since we are intersted in the complete data for the Tidy Data Study.
+The "test" and "train" subject data is merged together since we are intersted in the complete data for the Tidy Data Study.
 
-There are 561 variables in the original study. we are only interested in the mean and standard deviation variable for our study. (See variables section)   
+There are 561 variables in the original study. we are only interested in the mean and standard deviation variable for our study. (See variables section). We use 73 variables.  The variables were selected if they are "mean" or "std" variable sin the original data. 
+
+Two output files are created by the run_analysi.R script.  The subject, activity, and the 73 mean and standard deviation variables are written to "HumanActivyRecognitionDetail.csv".
+
+"HumanActivityRecognitionSummaryBySubjectAndActivity.csv" is also created and contains the average of the 73 variables for each subject/activity combination.    
+
 
 ##2. Dataset
         This study dataset includes the following files
@@ -53,6 +58,10 @@ train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject numb
 ##4. Output Files
   The R script run_analysis() creates two files in the working directory.
 
+File Name|File Description 
+--- | ---
+HumanActivyRecognitionDetail.csv| Mean and Standard Deviation Values. One row for each observation
+HumanActivityRecognitionSummaryBySubjectAndActivity.csv| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity 
 
 
 
@@ -154,7 +163,16 @@ Feature Number | Original Variable Name | New Variable Name
  R must be installed on the computer that will execute the run_analysis() script. 
  R version 3.0.3 (Warm Puppy) was used for this study.
 
-* Step 1.    Download and unzip
+The "data.table" package is required.
+
+To install:
+
+> `install.packages("data.table")`
+> `library("data.table)`
+
+
+
+* Step 1.    Download and unzip the raw data
   * Download the original study data [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 * Step 2    Set the working directory to the directory that contains the "UCI HAR Dataset" directory.
