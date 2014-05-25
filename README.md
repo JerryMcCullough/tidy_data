@@ -6,8 +6,9 @@
 3. Input Files
 4. Output Files
 5. Code Book
-6. Instructions
-7. Acknowledgement
+6. run_analysis() Script
+7. Instructions
+8. Acknowledgement
 
 
 
@@ -34,6 +35,7 @@ Two output files are created by the run_analysi.R script.  The subject, activity
 
 File Name|File Description 
 --- | ---
+CODEBOOK.md | File and variable information for this study
 HumanActivyRecognitionDetail.txt| Mean and Standard Deviation Values. One row for each observation
 HumanActivityRecognitionSummaryBySubjectAndActivity.txt| The average of each variable in the HumanActivityRecognitionDetail.txt file by subject and activity   
 README.md | Description of this study
@@ -42,8 +44,11 @@ run_analysis.R| R script to extract selected data
 
 
 ##3. Input Files
- The following file are used ny run_analysis() as input.
- 
+ The following file are used by the run_analysis() script as input.
+ The Input files must be downloaded prior to running the script.
+ See Intructions. 
+
+
 File | File Path | File Description
 --- | --- | ---
 train data|"UCI HAR Dataset/train/X_train.txt" | Contains 561 variables per row  for the TRAIN subjects
@@ -162,19 +167,63 @@ The first three columns of the outpur files are Row Number, Subject, Activity.
 
 The remaining 73 columns are the variables above.
 
-THe detail file has on row pre observation
+THe detail file has one row per observation
 
 The summary file has the mean for each variable by Subject and Activity.
 
 
-##6. Instructions
+##6. run_analysis() Script
+
+Establish input file variables
+   train and test data files
+   train and test activities files
+   train and test subjects files
+   activities labels file
+
+Create vector(select_features) of the 73 feature numbers to extract that were identified as mean or std.
+
+Create vector(new_feature_names) of the new column labels for the output.
+
+Read data files into data frames using the select_features vector to extract only the 73 variables.
+
+Read activities into data frames
+
+Read subjects into data frames
+
+Read labels into data frame
+
+Use rbind to combine to test and train data  data frames
+
+rbind the activities data frames
+
+rbind the subjects frames
+
+cbind the subjects, activities and data into the tidydata1 data frame.
+
+Set the column names of tidydata1 to the names in new_feature_names vector.
+
+Update the avtivities codes to activities labels in the tidydata1 data frame.
+
+Write the tidydat1 dataframe out as a .txt file: "HumanActivityRecognitionDetail.txt" with the first row as column names.
+
+Convert the tidydata1 data frame to a data table.
+
+Create tidydata2 data table using lapply, mean, by subject and activity on the 73 variables  
+Write tidydata2 data table out as a .txt file" "HumanActivityRecognitionSummaryBySubjectAndActivity.txt" with the first rpw as column names.
+
+The output is written to the current working directory.
+
+
+
+
+##7. Instructions
 
  R must be installed on the computer that will execute the run_analysis() script. 
  R version 3.0.3 (Warm Puppy) was used for this study.
 
 The "data.table" package is required.
 
-To install:
+To install the data.table package:
 
 > `install.packages("data.table")`
 > `library("data.table)`
@@ -193,7 +242,7 @@ To install:
   * From the R prompt> `run_analysis()`
 
 
-##7. Acknowledgement
+##8. Acknowledgement
 
 Use of the "Tidy Data" study does not require a license or acknowledgement.
 
