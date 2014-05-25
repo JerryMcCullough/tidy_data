@@ -34,8 +34,8 @@ Two output files are created by the run_analysi.R script.  The subject, activity
 
 File Name|File Description 
 --- | ---
-HumanActivyRecognitionDetail.csv| Mean and Standard Deviation Values. One row for each observation
-HumanActivityRecognitionSummaryBySubjectAndActivity.csv| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity   
+HumanActivyRecognitionDetail.txt| Mean and Standard Deviation Values. One row for each observation
+HumanActivityRecognitionSummaryBySubjectAndActivity.txt| The average of each variable in the HumanActivityRecognitionDetail.txt file by subject and activity   
 README.md | Description of this study
 run_analysis.R| R script to extract selected data
 
@@ -60,8 +60,8 @@ train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject numb
 
 File Name|File Description 
 --- | ---
-HumanActivyRecognitionDetail.csv| Mean and Standard Deviation Values. One row for each observation
-HumanActivityRecognitionSummaryBySubjectAndActivity.csv| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity 
+HumanActivyRecognitionDetail.txt| Mean and Standard Deviation Values. One row for each observation
+HumanActivityRecognitionSummaryBySubjectAndActivity.txt| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity 
 
 
 
@@ -156,6 +156,15 @@ Feature Number | Original Variable Name | New Variable Name
 559| angle(X,gravityMean)|GravityDirectionXAngleMean
 560| angle(Y,gravityMean)|GravityDirectionYAngleMean
 561| angle(Z,gravityMean)|GravityDirectionZAngleMean
+
+
+The first three columns of the outpur files are Row Number, Subject, Activity.
+
+The remaining 73 columns are the variables above.
+
+THe detail file has on row pre observation
+
+The summary file has the mean for each variable by Subject and Activity.
 
 
 ##6. Instructions

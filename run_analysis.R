@@ -141,15 +141,16 @@ new_feature_names <- c("Subject","Activity"
   tidydata1[act,2] <- "Laying"      
 #str(tidydata1)
 # Write the detail data file 
-      write.csv(tidydata1, file = "HumanActivityRecognitionDetail.csv")
+#      write.csv(tidydata1, file = "HumanActivityRecognitionDetail.csv")
+       write.table(tidydata1, file = "HumanActivityRecognitionDetail.txt", sep=",", col.names = colnames(tidydata1) )
 # Convert tidydata1 to data table
       tidydata1_dt <- data.table(tidydata1)
 # Summarize the data by subject and activity
 # Calculate the mean of each variable
 tidydata2 <- tidydata1_dt[, lapply(.SD,mean), by=eval(colnames(tidydata1_dt)[1:2])] 
 # Write the summarized data file
-write.csv(tidydata2, file = "HumanActivityRecognitionSummaryBySubjectAndActivity.csv")
-
+#    write.csv(tidydata2, file = "HumanActivityRecognitionSummaryBySubjectAndActivity.csv")
+     write.table(tidydata2, file = "HumanActivityRecognitionSummaryBySubjectAndActivity.txt", sep=",", col.names = colnames(tidydata2) )
 #str(tidydata1)
 #str(select_features)
 #str(tidydata2)  
