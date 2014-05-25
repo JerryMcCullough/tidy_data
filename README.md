@@ -26,8 +26,13 @@ There are 561 variables in the original study. we are only interested in the mea
 
 ##2. Dataset
         This study dataset includes the following files
-                README.md      -  Description of this study
-                run_analysis.R -  R script to extract selected data
+
+File Name|File Description 
+--- | ---
+HumanActivyRecognitionDetail.csv| Mean and Standard Deviation Values. One row for each observation
+HumanActivityRecognitionSummaryBySubjectAndActivity.csv| The average of each variable in the HumanActivityRecognitionDetail.csv file by subject and activity   
+README.md | Description of this study
+run_analysis.R| R script to extract selected data
 
 
 
@@ -46,23 +51,32 @@ train subjects|"UCI HAR Dataset/train/subject_train.txt| Contains a subject numb
 
 
 ##4. Output Files
+  The R script run_analysis() creates two files in the working directory.
+
+
+
 
 ##5. Code Book
-        run_analysis() creates two files:
+        
 
 
 
 
 
 ###Variables
+
+
+
 The raw data set contains 561 variables.  We are only using the mean and standard deviation in our study.  The following is a list of the variables that are extracted from the original data.  We also rename the variables to more meaningful names.  The variable list contains the original name (preceded by feature number) and the new name that is assigned to the variable.
+
+
 
  
 Feature Number | Original Variable Name | New Variable Name 
 --- | --- | ---
 1| tBodyAcc-mean()-X |         BodyAccelerationDirectionXTimeMean
 2| tBodyAcc-mean()-Y |         BodyAccelerationDirectionYTimeMean
-3| tBodyAcc-mean()-Z |        BodyAccelerationDirectionZTimeMean
+3| tBodyAcc-mean()-Z |         BodyAccelerationDirectionZTimeMean
 4| tBodyAcc-std()-X |          BodyAccelerationDirectionXTimeSdev
 5| tBodyAcc-std()-Y |          BodyAccelerationDirectionYTimeSdev
 6| tBodyAcc-std()-Z |          BodyAccelerationDirectionZTimeSdev
@@ -87,78 +101,52 @@ Feature Number | Original Variable Name | New Variable Name
 161| tBodyGyroJerk-mean()-X |  BodyGyroJerkDirectionXTimeMean
 162| tBodyGyroJerk-mean()-Y |  BodyGyroJerkDirectionYTimeMean
 163| tBodyGyroJerk-mean()-Z |  BodyGyroJerkDirectionZTimeMean
-
-164 tBodyGyroJerk-std()-X
-165 tBodyGyroJerk-std()-Y
-166 tBodyGyroJerk-std()-Z
-201 tBodyAccMag-mean()
-202 tBodyAccMag-std()
-214 tGravityAccMag-mean()
-215 tGravityAccMag-std()
-227 tBodyAccJerkMag-mean()
-228 tBodyAccJerkMag-std()
-240 tBodyGyroMag-mean()
-241 tBodyGyroMag-std()
-253 tBodyGyroJerkMag-mean()
-254 tBodyGyroJerkMag-std()
-266 fBodyAcc-mean()-X
-267 fBodyAcc-mean()-Y
-268 fBodyAcc-mean()-Z
-269 fBodyAcc-std()-X
-270 fBodyAcc-std()-Y
-271 fBodyAcc-std()-Z
-294 fBodyAcc-meanFreq()-X
-295 fBodyAcc-meanFreq()-Y
-296 fBodyAcc-meanFreq()-Z
-345 fBodyAccJerk-mean()-X
-346 fBodyAccJerk-mean()-Y
-347 fBodyAccJerk-mean()-Z
-348 fBodyAccJerk-std()-X
-349 fBodyAccJerk-std()-Y
-350 fBodyAccJerk-std()-Z
-373 fBodyAccJerk-meanFreq()-X
-374 fBodyAccJerk-meanFreq()-Y
-375 fBodyAccJerk-meanFreq()-Z
-424 fBodyGyro-mean()-X
-425 fBodyGyro-mean()-Y
-426 fBodyGyro-mean()-Z
-427 fBodyGyro-std()-X
-428 fBodyGyro-std()-Y
-429 fBodyGyro-std()-Z
-452 fBodyGyro-meanFreq()-X
-453 fBodyGyro-meanFreq()-Y
-454 fBodyGyro-meanFreq()-Z
-503 fBodyAccMag-mean()
-504 fBodyAccMag-std()
-516 fBodyBodyAccJerkMag-mean()
-517 fBodyBodyAccJerkMag-std()
-529 fBodyBodyGyroMag-mean()
-530 fBodyBodyGyroMag-std()
-542 fBodyBodyGyroJerkMag-mean()
-543 fBodyBodyGyroJerkMag-std()
-555 angle(tBodyAccMean,gravity)
-556 angle(tBodyAccJerkMean),gravityMean)
-557 angle(tBodyGyroMean,gravityMean)
-558 angle(tBodyGyroJerkMean,gravityMean)
-559 angle(X,gravityMean)
-560 angle(Y,gravityMean)
-561 angle(Z,gravityMean)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+164| tBodyGyroJerk-std()-X|BodyGyroJerkDirectionXTimeSdev
+165| tBodyGyroJerk-std()-Y|BodyGyroJerkDirectionYTimeSdev
+166| tBodyGyroJerk-std()-Z|BodyGyroJerkDirectionZTimeSdev
+201| tBodyAccMag-mean()| BodyAccelerationMagnitudeTimeMean
+202| tBodyAccMag-std()|BodyAccelerationMagnitudeTimeSdev
+214| tGravityAccMag-mean()|GravityAccelerationMagnitudeTimeMean
+215| tGravityAccMag-std()|GravityAccelerationMagnitudeTimeSdev
+227| tBodyAccJerkMag-mean()|BodyAccelerationJerkMagnitudeTimeMean
+228| tBodyAccJerkMag-std()|BodyAccelerationJerkMagnitudeTimeSdev
+240| tBodyGyroMag-mean()|BodyGyroMagnitudeTimeMean
+241| tBodyGyroMag-std()|BodyGyroMagnitudeTimeSdev
+253| tBodyGyroJerkMag-mean()|BodyGyroJerkMagnitudeTimeMean
+254| tBodyGyroJerkMag-std()|BodyGyroJerkMagnitudeTimeSdev
+266| fBodyAcc-mean()-X|BodyAccelerationDirectionXFreqMean
+267| fBodyAcc-mean()-Y|BodyAccelerationDirectionYFreqMean
+268| fBodyAcc-mean()-Z|BodyAccelerationDirectionZFreqMean
+269| fBodyAcc-std()-X|BodyAccelerationDirectionXFreqSdev
+270| fBodyAcc-std()-Y|BodyAccelerationDirectionYFreqSdev
+271| fBodyAcc-std()-Z|BodyAccelerationDirectionZFreqSdev
+345| fBodyAccJerk-mean()-X|BodyAccelerationJerkDirectionXFreqMean
+346| fBodyAccJerk-mean()-Y|BodyAccelerationJerkDirectionYFreqMean
+347| fBodyAccJerk-mean()-Z|BodyAccelerationJerkDirectionZFreqMean
+348| fBodyAccJerk-std()-X|BodyAccelerationJerkDirectionXFreqSdev
+349| fBodyAccJerk-std()-Y|BodyAccelerationJerkDirectionYFreqSdev
+350| fBodyAccJerk-std()-Z|BodyAccelerationJerkDirectionZFreqSdev
+424| fBodyGyro-mean()-X|BodyGyroDirectionXFreqMean
+425| fBodyGyro-mean()-Y|BodyGyroDirectionYFreqMean
+426| fBodyGyro-mean()-Z|BodyGyroDirectionZFreqMean
+427| fBodyGyro-std()-X|BodyGyroDirectionXFreqSdev
+428| fBodyGyro-std()-Y|BodyGyroDirectionYFreqSdev
+429| fBodyGyro-std()-Z|BodyGyroDirectionZFreqSdev
+503| fBodyAccMag-mean()|BodyAccelerationMagnitudeFreqMean
+504| fBodyAccMag-std()|BodyAccelerationMagnitudeFreqSdev
+516| fBodyBodyAccJerkMag-mean()|BodyAccelerationJerkMagnitudeFreqMean
+517| fBodyBodyAccJerkMag-std()|BodyAccelerationJerkMagnitudeFreqSdev
+529| fBodyBodyGyroMag-mean()|BodyGyroMagnitudeFreqMean
+530| fBodyBodyGyroMag-std()|BodyGyroMagnitudeFreqSdev
+542| fBodyBodyGyroJerkMag-mean()|BodyGyroJerkMagnitudeFreqMean
+543| fBodyBodyGyroJerkMag-std()|BodyGyroJerkMagnitudeFreqSdev
+555| angle(tBodyAccMean,gravity)|BodyGravityAccelerationAngleMean
+556| angle(tBodyAccJerkMean),gravityMean)|BodyGravityAccelerationJerkAngleMean
+557| angle(tBodyGyroMean,gravityMean)|BodyGravityGyroAngleMean
+558| angle(tBodyGyroJerkMean,gravityMean)|BodyGravityGyroJerkAngleMean
+559| angle(X,gravityMean)|GravityDirectionXAngleMean
+560| angle(Y,gravityMean)|GravityDirectionYAngleMean
+561| angle(Z,gravityMean)|GravityDirectionZAngleMean
 
 
 ##6. Instructions
